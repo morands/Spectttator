@@ -18,7 +18,9 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *title;
 @property (nonatomic, retain) IBOutlet UILabel *player;
-@property (nonatomic, retain) IBOutlet UILabel *info;
+@property (nonatomic, retain) IBOutlet UILabel *likes;
+@property (nonatomic, retain) IBOutlet UILabel *comments;
+@property (nonatomic, retain) IBOutlet UILabel *views;
 @property (nonatomic, retain) IBOutlet UIImageView *shot;
 
 - (void)loadShot:(SPShot *)aShot withImage:(UIImage *)image;

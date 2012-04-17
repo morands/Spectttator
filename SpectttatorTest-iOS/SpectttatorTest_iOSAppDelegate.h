@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpectttatorTest_iOSAppDelegate : NSObject <UIApplicationDelegate>
+@interface SpectttatorTest_iOSAppDelegate : NSObject <UIApplicationDelegate> 
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;

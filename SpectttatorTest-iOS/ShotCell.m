@@ -12,14 +12,19 @@
 
 @synthesize title = _title;
 @synthesize player = _player;
-@synthesize info = _info;
+@synthesize views = _views;
+@synthesize likes = _likes;
+@synthesize comments = _comments;
 @synthesize shot = _shot;
 
 - (void)loadShot:(SPShot *)aShot withImage:(UIImage *)image{
     self.title.text = aShot.title;
     self.player.text = aShot.player.name;
-    self.info.text = [NSString stringWithFormat:@"👀%lu  💓%lu  📢%lu", 
-                       aShot.viewsCount, aShot.likesCount, aShot.commentsCount];
+    self.likes.text = [NSString stringWithFormat:@"%lu", aShot.likesCount];
+    self.comments.text = [NSString stringWithFormat:@"%lu", aShot.commentsCount];
+    self.views.text = [NSString stringWithFormat:@"%lu", aShot.viewsCount];
+    
+    
     self.shot.image = image;
 }
 

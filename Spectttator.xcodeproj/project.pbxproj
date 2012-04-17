@@ -86,6 +86,7 @@
 		73C034791476554900800FC3 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E902A814764DFF006EB9E4 /* JSONKit.m */; };
 		73E902AA14764DFF006EB9E4 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E902A714764DFF006EB9E4 /* JSONKit.h */; };
 		73E902AC14764DFF006EB9E4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E902A814764DFF006EB9E4 /* JSONKit.m */; };
+		7A6F845C153B2B67003E17FA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6F845B153B2B67003E17FA /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		73C01CE213C2ED9800A8ECDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73E902A714764DFF006EB9E4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		73E902A814764DFF006EB9E4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		7A6F845B153B2B67003E17FA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6F845C153B2B67003E17FA /* MessageUI.framework in Frameworks */,
 				73C01CAE13C2EBBC00A8ECDB /* UIKit.framework in Frameworks */,
 				73C01CE413C2EDA000A8ECDB /* Foundation.framework in Frameworks */,
 			);
@@ -162,6 +165,7 @@
 		73698B6213B681F400922D1A = {
 			isa = PBXGroup;
 			children = (
+				7A6F845B153B2B67003E17FA /* MessageUI.framework */,
 				73698B7713B681F400922D1A /* Spectttator */,
 				73698B7013B681F400922D1A /* Mac Frameworks */,
 				73C01C7C13C2EA8600A8ECDB /* iOS Frameworks */,
@@ -490,13 +494,12 @@
 		73698B8113B681F400922D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spectttator/Spectttator-Prefix.pch";
 				INFOPLIST_FILE = "Spectttator/Spectttator-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -505,13 +508,12 @@
 		73698B8213B681F400922D1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spectttator/Spectttator-Prefix.pch";
 				INFOPLIST_FILE = "Spectttator/Spectttator-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -521,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				DSTROOT = /tmp/Spectttator_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spectttator/Spectttator-iOS-Prefix.pch";
@@ -535,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				DSTROOT = /tmp/Spectttator_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spectttator/Spectttator-iOS-Prefix.pch";
@@ -542,7 +546,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};

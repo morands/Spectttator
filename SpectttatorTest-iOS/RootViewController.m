@@ -30,7 +30,7 @@
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [SPRequest shotsForList:self.list 
-             withPagination:[SPPagination perPage:30] 
+             withPagination:[SPPagination perPage:50] 
             runOnMainThread:YES 
                   withBlock:^(NSArray *theShots, SPPagination *thsPagination){
                       self.shots = theShots;
@@ -78,17 +78,32 @@
 - (void)viewDidLoad{
     [self refreshWithList:SPPopularList];
     
-    self.refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
-                                                                                   target:self 
-                                                                                   action:@selector(refresh)];          
-    self.navigationItem.rightBarButtonItem = self.refreshButton;
+    
     
     self.listButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks 
                                                                                    target:self 
                                                                                    action:@selector(changeList)];          
     self.navigationItem.leftBarButtonItem = self.listButton;
     
+    // settiamo la data dell'ultimo refresh (in questo caso è nil, non ci sono date precedenti)
+    [self.refreshHeaderView setLastRefreshDate:nil];
+    
     [super viewDidLoad];
+}
+
+- (void)reloadTableViewDataSource{
+	//  qui possiamo richiamare metodi specifici per ricaricare i dati
+    //[listaElementi addObject:@"Fabrizio"];
+    //[listaElementi addObject:@"Kevin"];
+	[super performSelector:@selector(dataSourceDidFinishLoadingNewData) withObject:nil afterDelay:0.0];
+    
+}
+- (void)dataSourceDidFinishLoadingNewData{
+	// settiamo la data corrente come ultimo refresh
+    [self refreshWithList:nil];
+    [refreshHeaderView setCurrentDate];	
+	[super dataSourceDidFinishLoadingNewData];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -142,6 +157,8 @@
     // Open the shot in safari
     SPShot *aShot = [self.shots objectAtIndex:indexPath.row];
     [[UIApplication sharedApplication] openURL:aShot.url];
+     
+    
 }
 
 - (void)dealloc{

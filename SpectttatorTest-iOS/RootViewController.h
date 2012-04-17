@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ShotCell.h"
 
-@interface RootViewController : UITableViewController <UIActionSheetDelegate>
+#import "PullToRefreshTableViewController.h"
+
+@interface RootViewController : PullToRefreshTableViewController <UIActionSheetDelegate>
 
 @property (retain, nonatomic) NSString *list;
 @property (retain, nonatomic) NSArray *shots;

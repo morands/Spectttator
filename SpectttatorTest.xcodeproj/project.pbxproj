@@ -20,9 +20,15 @@
 		73C01CDB13C2ED3000A8ECDB /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C01CD913C2ED3000A8ECDB /* ShotCell.m */; };
 		73C01CDC13C2ED3000A8ECDB /* ShotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73C01CDA13C2ED3000A8ECDB /* ShotCell.xib */; };
 		73C01CDE13C2ED3C00A8ECDB /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73C01CDD13C2ED3B00A8ECDB /* RootViewController.xib */; };
-		73C01CE113C2ED7000A8ECDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C01CAD13C2EBBC00A8ECDB /* UIKit.framework */; };
-		73C01CE313C2ED9800A8ECDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C01CE213C2ED9800A8ECDB /* Foundation.framework */; };
 		73D2C9E613C2EF2D009C0419 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73D2C9E513C2EF2D009C0419 /* MainMenu.xib */; };
+		7A0C2891153DA64B00E17878 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C2890153DA64B00E17878 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7A0C2896153DA79600E17878 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C2893153DA79600E17878 /* EGORefreshTableHeaderView.m */; };
+		7A0C2897153DA79600E17878 /* PullToRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C2895153DA79600E17878 /* PullToRefreshTableViewController.m */; };
+		7A0C2899153DA7C900E17878 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A0C2898153DA7C900E17878 /* blueArrow.png */; };
+		7A0C289B153DABBE00E17878 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C289A153DABBE00E17878 /* UIKit.framework */; };
+		7A0C289D153DABC500E17878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C289C153DABC500E17878 /* Foundation.framework */; };
+		7A0C28A3153DACD800E17878 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C28A2153DACD800E17878 /* CoreGraphics.framework */; };
+		7ABA1CC6153C746400B62712 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */; };
 		D688AD2113C70A6E00278A6D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D688AD2013C70A6E00278A6D /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +89,6 @@
 		7388113F13C2F04B004B037C /* Spectttator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Spectttator.xcodeproj; sourceTree = "<group>"; };
 		739A449613B826A000E7783A /* NSAttributedString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Hyperlink.h"; sourceTree = "<group>"; };
 		739A449713B826A000E7783A /* NSAttributedString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Hyperlink.m"; sourceTree = "<group>"; };
-		73C01CAD13C2EBBC00A8ECDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		73C01CB313C2EC4A00A8ECDB /* SpectttatorTest-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpectttatorTest-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C01CBE13C2EC4A00A8ECDB /* SpectttatorTest-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpectttatorTest-iOS-Info.plist"; sourceTree = "<group>"; };
 		73C01CC213C2EC4A00A8ECDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,8 +101,18 @@
 		73C01CD913C2ED3000A8ECDB /* ShotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotCell.m; sourceTree = "<group>"; };
 		73C01CDA13C2ED3000A8ECDB /* ShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCell.xib; sourceTree = "<group>"; };
 		73C01CDD13C2ED3B00A8ECDB /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		73C01CE213C2ED9800A8ECDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73D2C9E513C2EF2D009C0419 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		7A0C2890153DA64B00E17878 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7A0C2892153DA79600E17878 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		7A0C2893153DA79600E17878 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		7A0C2894153DA79600E17878 /* PullToRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshTableViewController.h; sourceTree = "<group>"; };
+		7A0C2895153DA79600E17878 /* PullToRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshTableViewController.m; sourceTree = "<group>"; };
+		7A0C2898153DA7C900E17878 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		7A0C289A153DABBE00E17878 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7A0C289C153DABC500E17878 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A0C28A2153DACD800E17878 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7A6F8459153B2B4F003E17FA /* Message.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Message.framework; path = System/Library/Frameworks/Message.framework; sourceTree = SDKROOT; };
+		7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		D688AD2013C70A6E00278A6D /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,9 +130,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0C28A3153DACD800E17878 /* CoreGraphics.framework in Frameworks */,
+				7A0C289D153DABC500E17878 /* Foundation.framework in Frameworks */,
+				7A0C289B153DABBE00E17878 /* UIKit.framework in Frameworks */,
+				7A0C2891153DA64B00E17878 /* QuartzCore.framework in Frameworks */,
 				7388115913C2F075004B037C /* libSpectttator-iOS.a in Frameworks */,
-				73C01CE313C2ED9800A8ECDB /* Foundation.framework in Frameworks */,
-				73C01CE113C2ED7000A8ECDB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +150,7 @@
 				73698B7013B681F400922D1A /* Mac Frameworks */,
 				73C01C7C13C2EA8600A8ECDB /* iOS Frameworks */,
 				73698B6F13B681F400922D1A /* Products */,
+				7A0C2898153DA7C900E17878 /* blueArrow.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,8 +207,11 @@
 		73C01C7C13C2EA8600A8ECDB /* iOS Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73C01CE213C2ED9800A8ECDB /* Foundation.framework */,
-				73C01CAD13C2EBBC00A8ECDB /* UIKit.framework */,
+				7A0C28A2153DACD800E17878 /* CoreGraphics.framework */,
+				7A0C289C153DABC500E17878 /* Foundation.framework */,
+				7A0C289A153DABBE00E17878 /* UIKit.framework */,
+				7A0C2890153DA64B00E17878 /* QuartzCore.framework */,
+				7A6F8459153B2B4F003E17FA /* Message.framework */,
 			);
 			name = "iOS Frameworks";
 			sourceTree = "<group>";
@@ -198,6 +219,7 @@
 		73C01CBC13C2EC4A00A8ECDB /* SpectttatorTest-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7ABA1CC4153C746400B62712 /* iPad */,
 				73C01CC513C2EC4A00A8ECDB /* SpectttatorTest_iOSAppDelegate.h */,
 				73C01CC613C2EC4A00A8ECDB /* SpectttatorTest_iOSAppDelegate.m */,
 				73C01CC813C2EC4A00A8ECDB /* RootViewController.h */,
@@ -207,6 +229,10 @@
 				73C01CD913C2ED3000A8ECDB /* ShotCell.m */,
 				73C01CDA13C2ED3000A8ECDB /* ShotCell.xib */,
 				D688AD2013C70A6E00278A6D /* MainWindow.xib */,
+				7A0C2892153DA79600E17878 /* EGORefreshTableHeaderView.h */,
+				7A0C2893153DA79600E17878 /* EGORefreshTableHeaderView.m */,
+				7A0C2894153DA79600E17878 /* PullToRefreshTableViewController.h */,
+				7A0C2895153DA79600E17878 /* PullToRefreshTableViewController.m */,
 				73C01CBD13C2EC4A00A8ECDB /* Supporting Files */,
 			);
 			path = "SpectttatorTest-iOS";
@@ -220,6 +246,14 @@
 				73C01CC413C2EC4A00A8ECDB /* SpectttatorTest-iOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ABA1CC4153C746400B62712 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +362,8 @@
 				73C01CDC13C2ED3000A8ECDB /* ShotCell.xib in Resources */,
 				73C01CDE13C2ED3C00A8ECDB /* RootViewController.xib in Resources */,
 				D688AD2113C70A6E00278A6D /* MainWindow.xib in Resources */,
+				7ABA1CC6153C746400B62712 /* MainWindow-iPad.xib in Resources */,
+				7A0C2899153DA7C900E17878 /* blueArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +388,8 @@
 				73C01CC713C2EC4A00A8ECDB /* SpectttatorTest_iOSAppDelegate.m in Sources */,
 				73C01CCA13C2EC4A00A8ECDB /* RootViewController.m in Sources */,
 				73C01CDB13C2ED3000A8ECDB /* ShotCell.m in Sources */,
+				7A0C2896153DA79600E17878 /* EGORefreshTableHeaderView.m in Sources */,
+				7A0C2897153DA79600E17878 /* PullToRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +487,11 @@
 				GCC_PREFIX_HEADER = "SpectttatorTest-iOS/SpectttatorTest-iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = Spectttator;
 				INFOPLIST_FILE = "SpectttatorTest-iOS/SpectttatorTest-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -470,11 +509,12 @@
 				GCC_PREFIX_HEADER = "SpectttatorTest-iOS/SpectttatorTest-iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = Spectttator;
 				INFOPLIST_FILE = "SpectttatorTest-iOS/SpectttatorTest-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
