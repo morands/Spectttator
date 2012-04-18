@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ShotCell.h"
+#import "ViewController.h"
 
 #import "PullToRefreshTableViewController.h"
 

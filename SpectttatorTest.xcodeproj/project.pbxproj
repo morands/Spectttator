@@ -28,6 +28,8 @@
 		7A0C289B153DABBE00E17878 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C289A153DABBE00E17878 /* UIKit.framework */; };
 		7A0C289D153DABC500E17878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C289C153DABC500E17878 /* Foundation.framework */; };
 		7A0C28A3153DACD800E17878 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C28A2153DACD800E17878 /* CoreGraphics.framework */; };
+		7A0C28E5153DDE4100E17878 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C28E3153DDE4100E17878 /* ViewController.m */; };
+		7A0C28E6153DDE4100E17878 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A0C28E4153DDE4100E17878 /* ViewController.xib */; };
 		7ABA1CC6153C746400B62712 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */; };
 		D688AD2113C70A6E00278A6D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D688AD2013C70A6E00278A6D /* MainWindow.xib */; };
 /* End PBXBuildFile section */
@@ -111,6 +113,9 @@
 		7A0C289A153DABBE00E17878 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7A0C289C153DABC500E17878 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A0C28A2153DACD800E17878 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7A0C28E2153DDE4100E17878 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7A0C28E3153DDE4100E17878 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7A0C28E4153DDE4100E17878 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		7A6F8459153B2B4F003E17FA /* Message.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Message.framework; path = System/Library/Frameworks/Message.framework; sourceTree = SDKROOT; };
 		7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		D688AD2013C70A6E00278A6D /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -224,6 +229,9 @@
 				73C01CC613C2EC4A00A8ECDB /* SpectttatorTest_iOSAppDelegate.m */,
 				73C01CC813C2EC4A00A8ECDB /* RootViewController.h */,
 				73C01CC913C2EC4A00A8ECDB /* RootViewController.m */,
+				7A0C28E2153DDE4100E17878 /* ViewController.h */,
+				7A0C28E3153DDE4100E17878 /* ViewController.m */,
+				7A0C28E4153DDE4100E17878 /* ViewController.xib */,
 				73C01CDD13C2ED3B00A8ECDB /* RootViewController.xib */,
 				73C01CD813C2ED3000A8ECDB /* ShotCell.h */,
 				73C01CD913C2ED3000A8ECDB /* ShotCell.m */,
@@ -364,6 +372,7 @@
 				D688AD2113C70A6E00278A6D /* MainWindow.xib in Resources */,
 				7ABA1CC6153C746400B62712 /* MainWindow-iPad.xib in Resources */,
 				7A0C2899153DA7C900E17878 /* blueArrow.png in Resources */,
+				7A0C28E6153DDE4100E17878 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +399,7 @@
 				73C01CDB13C2ED3000A8ECDB /* ShotCell.m in Sources */,
 				7A0C2896153DA79600E17878 /* EGORefreshTableHeaderView.m in Sources */,
 				7A0C2897153DA79600E17878 /* PullToRefreshTableViewController.m in Sources */,
+				7A0C28E5153DDE4100E17878 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

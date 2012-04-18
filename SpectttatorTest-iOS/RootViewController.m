@@ -156,7 +156,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // Open the shot in safari
     SPShot *aShot = [self.shots objectAtIndex:indexPath.row];
-    [[UIApplication sharedApplication] openURL:aShot.url];
+    
+    //[[UIApplication sharedApplication] openURL:aShot.url];
+    NSURL *address = aShot.url;
+    NSString *urlString = [address absoluteString];
+    
+
+    ViewController *controller = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    controller.indirizzo = urlString;
+        
+    [self.navigationController pushViewController:controller animated:YES];
      
     
 }
