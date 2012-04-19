@@ -16,16 +16,17 @@
 @synthesize likes = _likes;
 @synthesize comments = _comments;
 @synthesize shot = _shot;
-@synthesize likes = _likes;
-@synthesize views = _views;
-@synthesize comments = _comments;
+@synthesize likesIcon = _likesIcon;
+@synthesize commentsIcon = _commentsIcon;
+@synthesize viewsIcon = _viewsIcon;
 
 - (void)loadShot:(SPShot *)aShot withImage:(UIImage *)image{
     self.title.text = aShot.title;
     self.player.text = aShot.player.name;
-    self.likes.text = aShot.likesCount;
-    self.comments.text = aShot.commentsCount;
-    self.views.text = aShot.viewsCount;
+    
+    self.likes.text = [NSString stringWithFormat:@"%lu", aShot.likesCount];
+    self.comments.text = [NSString stringWithFormat:@"%lu", aShot.commentsCount];
+    self.views.text = [NSString stringWithFormat:@"%lu", aShot.viewsCount];
     
     
     self.shot.image = image;
