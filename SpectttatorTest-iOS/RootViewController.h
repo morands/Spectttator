@@ -12,7 +12,7 @@
 
 #import "PullToRefreshTableViewController.h"
 
-@interface RootViewController : PullToRefreshTableViewController <UIActionSheetDelegate>
+@interface RootViewController : PullToRefreshTableViewController <UIActionSheetDelegate> 
 
 @property (retain, nonatomic) NSString *list;
 @property (retain, nonatomic) NSArray *shots;
@@ -21,5 +21,6 @@
 
 @property (retain, nonatomic) UIBarButtonItem *listButton;
 @property (retain, nonatomic) UIBarButtonItem *refreshButton;
+
 
 @end

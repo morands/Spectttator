@@ -16,9 +16,8 @@
 @synthesize likes = _likes;
 @synthesize comments = _comments;
 @synthesize shot = _shot;
-@synthesize likesIcon = _likesIcon;
-@synthesize commentsIcon = _commentsIcon;
-@synthesize viewsIcon = _viewsIcon;
+
+
 
 - (void)loadShot:(SPShot *)aShot withImage:(UIImage *)image{
     self.title.text = aShot.title;
@@ -28,9 +27,10 @@
     self.comments.text = [NSString stringWithFormat:@"%lu", aShot.commentsCount];
     self.views.text = [NSString stringWithFormat:@"%lu", aShot.viewsCount];
     
-    
     self.shot.image = image;
+    
 }
+
 
 - (void)dealloc {
     [_title release];

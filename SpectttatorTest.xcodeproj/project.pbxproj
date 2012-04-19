@@ -30,6 +30,12 @@
 		7A0C28A3153DACD800E17878 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0C28A2153DACD800E17878 /* CoreGraphics.framework */; };
 		7A0C28E5153DDE4100E17878 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C28E3153DDE4100E17878 /* ViewController.m */; };
 		7A0C28E6153DDE4100E17878 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A0C28E4153DDE4100E17878 /* ViewController.xib */; };
+		7A3B830D15404B9600131AF4 /* Views.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B830815404B9600131AF4 /* Views.png */; };
+		7A3B830E15404B9600131AF4 /* Views.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B830815404B9600131AF4 /* Views.png */; };
+		7A3B83121540541400131AF4 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B83101540541400131AF4 /* comments.png */; };
+		7A3B83131540541400131AF4 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B83101540541400131AF4 /* comments.png */; };
+		7A3B83141540541400131AF4 /* likes.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B83111540541400131AF4 /* likes.png */; };
+		7A3B83151540541400131AF4 /* likes.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B83111540541400131AF4 /* likes.png */; };
 		7ABA1CC6153C746400B62712 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */; };
 		D688AD2113C70A6E00278A6D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D688AD2013C70A6E00278A6D /* MainWindow.xib */; };
 /* End PBXBuildFile section */
@@ -116,6 +122,9 @@
 		7A0C28E2153DDE4100E17878 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7A0C28E3153DDE4100E17878 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7A0C28E4153DDE4100E17878 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		7A3B830815404B9600131AF4 /* Views.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Views.png; sourceTree = "<group>"; };
+		7A3B83101540541400131AF4 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comments.png; sourceTree = "<group>"; };
+		7A3B83111540541400131AF4 /* likes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likes.png; sourceTree = "<group>"; };
 		7A6F8459153B2B4F003E17FA /* Message.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Message.framework; path = System/Library/Frameworks/Message.framework; sourceTree = SDKROOT; };
 		7ABA1CC5153C746400B62712 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		D688AD2013C70A6E00278A6D /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -155,7 +164,7 @@
 				73698B7013B681F400922D1A /* Mac Frameworks */,
 				73C01C7C13C2EA8600A8ECDB /* iOS Frameworks */,
 				73698B6F13B681F400922D1A /* Products */,
-				7A0C2898153DA7C900E17878 /* blueArrow.png */,
+				7A3B830F15404BAB00131AF4 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +263,17 @@
 				73C01CC413C2EC4A00A8ECDB /* SpectttatorTest-iOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A3B830F15404BAB00131AF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A3B83101540541400131AF4 /* comments.png */,
+				7A3B83111540541400131AF4 /* likes.png */,
+				7A0C2898153DA7C900E17878 /* blueArrow.png */,
+				7A3B830815404B9600131AF4 /* Views.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7ABA1CC4153C746400B62712 /* iPad */ = {
@@ -360,6 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D2C9E613C2EF2D009C0419 /* MainMenu.xib in Resources */,
+				7A3B830D15404B9600131AF4 /* Views.png in Resources */,
+				7A3B83121540541400131AF4 /* comments.png in Resources */,
+				7A3B83141540541400131AF4 /* likes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +396,9 @@
 				7ABA1CC6153C746400B62712 /* MainWindow-iPad.xib in Resources */,
 				7A0C2899153DA7C900E17878 /* blueArrow.png in Resources */,
 				7A0C28E6153DDE4100E17878 /* ViewController.xib in Resources */,
+				7A3B830E15404B9600131AF4 /* Views.png in Resources */,
+				7A3B83131540541400131AF4 /* comments.png in Resources */,
+				7A3B83151540541400131AF4 /* likes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

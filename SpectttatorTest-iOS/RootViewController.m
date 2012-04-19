@@ -87,6 +87,7 @@
     
     // setting latest refresh date (nil)
     [self.refreshHeaderView setLastRefreshDate:nil];
+
     
     [super viewDidLoad];
 }

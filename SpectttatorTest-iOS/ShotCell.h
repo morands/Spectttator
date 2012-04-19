@@ -14,9 +14,6 @@
     UILabel *_player;
     UILabel *_info;
     UIImageView *_shot;
-    UIImageView *_likesIcon;
-    UIImageView *_commentsIcon;
-    UIImageView *_viewsIcon;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *title;
@@ -25,9 +22,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *comments;
 @property (nonatomic, retain) IBOutlet UILabel *views;
 @property (nonatomic, retain) IBOutlet UIImageView *shot;
-@property (nonatomic, retain) IBOutlet UIImageView *likesIcon;
-@property (nonatomic, retain) IBOutlet UIImageView *commentsIcon;
-@property (nonatomic, retain) IBOutlet UIImageView *viewsIcon;
 
 - (void)loadShot:(SPShot *)aShot withImage:(UIImage *)image;
 
