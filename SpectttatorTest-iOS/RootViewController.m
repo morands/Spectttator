@@ -59,12 +59,14 @@
     }else if(buttonIndex == 2){
         [self refreshWithList:SPDebutsList];
     }
+    
+    
 }
 
 - (void)changeList{
 	UIActionSheet *listSheet = [[UIActionSheet alloc] initWithTitle:@"Lists" 
                                                             delegate:self 
-                                                   cancelButtonTitle:nil
+                                                   cancelButtonTitle:@"Dismiss"
                                               destructiveButtonTitle:nil
                                                    otherButtonTitles:[SPPopularList capitalizedString], 
                                                                      [SPEveryoneList capitalizedString], 
