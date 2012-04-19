@@ -157,15 +157,14 @@
     // Open the shot in safari
     SPShot *aShot = [self.shots objectAtIndex:indexPath.row];
     
+    //To open shots into Safari instead of in-app uncomment the following line (161) and delete the block from row 166 to 168 (ViewController ... animated:YES])
     //[[UIApplication sharedApplication] openURL:aShot.url];
     NSURL *address = aShot.url;
     NSString *urlString = [address absoluteString];
     
 
     ViewController *controller = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    
-    controller.indirizzo = urlString;
-        
+    controller.indirizzo = urlString;  
     [self.navigationController pushViewController:controller animated:YES];
      
     
