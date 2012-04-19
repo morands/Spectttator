@@ -28,7 +28,7 @@
     self.views.text = [NSString stringWithFormat:@"%lu", aShot.viewsCount];
     
     self.shot.image = image;
-    
+        
 }
 
 
