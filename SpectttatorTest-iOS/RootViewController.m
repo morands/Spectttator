@@ -72,7 +72,7 @@
                                                                      [SPEveryoneList capitalizedString], 
                                                                      [SPDebutsList  capitalizedString], 
                                                                       nil];
-	[listSheet setActionSheetStyle:UIActionSheetStyleBlackOpaque];
+    [listSheet setActionSheetStyle:UIBarStyleDefault];
 	[listSheet showInView:self.view];
 	[listSheet release];    
 }
