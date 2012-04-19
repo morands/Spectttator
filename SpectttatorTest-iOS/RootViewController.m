@@ -85,21 +85,19 @@
                                                                                    action:@selector(changeList)];          
     self.navigationItem.leftBarButtonItem = self.listButton;
     
-    // settiamo la data dell'ultimo refresh (in questo caso è nil, non ci sono date precedenti)
+    // setting latest refresh date (nil)
     [self.refreshHeaderView setLastRefreshDate:nil];
     
     [super viewDidLoad];
 }
 
 - (void)reloadTableViewDataSource{
-	//  qui possiamo richiamare metodi specifici per ricaricare i dati
-    //[listaElementi addObject:@"Fabrizio"];
-    //[listaElementi addObject:@"Kevin"];
+
 	[super performSelector:@selector(dataSourceDidFinishLoadingNewData) withObject:nil afterDelay:0.0];
     
 }
 - (void)dataSourceDidFinishLoadingNewData{
-	// settiamo la data corrente come ultimo refresh
+	// resetting latest refresh date
     [self refreshWithList:nil];
     [refreshHeaderView setCurrentDate];	
 	[super dataSourceDidFinishLoadingNewData];
